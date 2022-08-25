@@ -22,7 +22,7 @@ a {
         cycles: "max",
         autolock: true,
     }).ready(function (fs, main) {
-      fs.extract("/roms/Doom.zip").then(function () {
+      fs.extract("Doom.zip").then(function () {
         main(["-c", "DOOM.EXE"]).then(function (ci) {
             window.ci = ci;
         });
